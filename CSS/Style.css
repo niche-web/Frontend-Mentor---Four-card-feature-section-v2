@@ -1,0 +1,98 @@
+/* elements */
+body {
+  font-family: 'Poppins';
+  font-size: 16px;
+  text-align: center;
+  color: hsl(229, 6%, 66%);
+  width: 1440px;
+}
+
+
+h1, h2, h3 {
+  color: hsl(234, 12%, 34%);
+}
+h1, h2{
+  font-size: 1.825rem;
+}
+h2{
+  margin-top:-1.5px;
+  margin-bottom:-7px;
+}
+p{
+  font-size: 0.8rem;
+  width: 40%;
+  line-height:1.6;
+}
+img {
+  float: right;
+}
+/* general */
+.container-fluid {
+  padding: 3% 10%;
+}
+
+/* heading section */
+#heading .container-fluid{
+  margin-top: 24px;
+  margin-bottom: -8px;
+}
+
+#cards .container-fluid{
+  padding-top:0;
+}
+.card {
+  max-width: 340px;
+}
+
+/* card margin */
+.card-marg-td {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.card-header {
+  border-bottom: 0;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 0.8rem;
+  margin-bottom: 3rem;
+}
+
+.karma {
+  margin-top: 30px;
+}
+
+/* footer section */
+.attribution {
+  font-size: 0.69rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* responsiveness */
+@media (max-width: 400px) {
+
+  /* heading section */
+  h2, h1 {
+    font-size: 1.5rem;
+  }
+
+  #heading p {
+    font-size: 0.9rem;
+    width: 100%;
+  }
+
+  /* footer section */
+  .attribution {
+    font-size: 0.6rem;
+  }
+}
