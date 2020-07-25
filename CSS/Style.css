@@ -44,20 +44,15 @@ img {
   margin-bottom: -8px;
 }
 
-#cards .container-fluid{
-  padding-top:0;
+.cards-container{
+  margin-top:15px;
+  margin-bottom: 60px;
 }
 .card {
   width: 280px;
   height: 200px;
   position: relative;
 }
-
-/* card margin */
-/* .card-marg-td {
-  margin-top: 15px;
-  margin-bottom: 15px;
-} */
 
 .card-header {
   border-bottom: 0;
@@ -71,19 +66,25 @@ img {
 .card-text {
   font-size: 0.65rem;
   width: 100%;
-  /* margin-bottom: 3rem; */
   margin-top: -3px;
   line-height: 1.8;
 }
 
 .karma {
-  margin-top: 30px;
+  margin-top: 24px;
 }
-
+.Supervisor{
+  margin-right: -10px;
+}
+.Calculator{
+  margin-left: -10px;
+}
 /* footer section */
+
+
 .attribution {
   font-size: 0.69rem;
-  text-align: center;
+  margin: auto;
 }
 
 .attribution a {
