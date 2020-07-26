@@ -1,61 +1,71 @@
-/* elements */
+/* -------------------elements -------------------------*/
 body {
   font-family: 'Poppins';
   font-size: 16px;
   text-align: center;
   color: hsl(229, 6%, 66%);
-  width: 1440px;
+  max-width: 1440px;
 }
-
 
 h1, h2, h3 {
   color: hsl(234, 12%, 34%);
 }
-h1, h2{
+
+h1, h2 {
   font-size: 1.825rem;
 }
-h3{
-  font-size: 1rem!important;
+
+h3 {
+  font-size: 1rem !important;
   margin-top: 3px;
 }
-h2{
-  margin-top:-1.5px;
-  margin-bottom:-7px;
+
+h2 {
+  margin-top: -1.5px;
+  margin-bottom: -7px;
 }
-p{
+
+p {
   font-size: 0.8rem;
-  width: 40%;
-  line-height:1.6;
+  width: 32%;
+  line-height: 1.6;
 }
+
 img {
   position: absolute;
   right: 25.5px;
   bottom: 25.5px;
   width: 18.3%
 }
-/* general */
-.container-fluid {
-  padding: 3% 10%;
-}
 
-/* heading section */
-#heading .container-fluid{
+/* --------------------------Title Section--------------------------  */
+#heading .container-fluid {
   margin-top: 24px;
-  margin-bottom: -8px;
+  margin-bottom: 50px;
 }
 
-.cards-container{
-  margin-top:15px;
+/* -------------------------Card Section----------------------------------- */
+.cards-container {
   margin-bottom: 60px;
 }
+
+.card-column.row {
+  flex-grow: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.second-column {
+  margin-left: 24px !important;
+  margin-right: 24px !important;
+}
+
+/* ------------------------Cards--------------------------------- */
 .card {
   width: 280px;
   height: 200px;
   position: relative;
-}
-
-.card-header {
-  border-bottom: 0;
+  border-radius: 8px;
 }
 
 .card-title {
@@ -72,18 +82,25 @@ img {
 
 .karma {
   margin-top: 24px;
+  background: linear-gradient(hsl(34, 97%, 64%) 3px, white 3px);
 }
-.Supervisor{
-  margin-right: -10px;
-}
-.Calculator{
-  margin-left: -10px;
-}
-/* footer section */
 
+.Supervisor {
+  background: linear-gradient(hsl(180, 62%, 55%) 3px, white 3px);
+}
 
+.Calculator {
+  background: linear-gradient(hsl(212, 86%, 64%) 3px, white 3px);
+}
+
+.Team-builder {
+  background: linear-gradient(hsl(0, 78%, 62%) 3px, white 3px);
+}
+
+/* --------------------------footer section ------------------------------*/
 .attribution {
   font-size: 0.69rem;
+  width: 100%;
   margin: auto;
 }
 
@@ -91,17 +108,59 @@ img {
   color: hsl(228, 45%, 44%);
 }
 
-/* responsiveness */
+/*------------------------------- responsiveness ------------------------*/
 @media (max-width: 400px) {
 
-  /* heading section */
+  /* ---------------------------title section ---------------------------*/
   h2, h1 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+  }
+
+  h2 {
+    margin-top: -1px;
+    margin-bottom: -9px;
+  }
+  img {
+    right: 22.5px;
+    bottom: 22.5px;
   }
 
   #heading p {
-    font-size: 0.9rem;
-    width: 100%;
+    font-size: 0.8rem;
+    width: 75%;
+  }
+
+  #heading .container-fluid {
+    margin-top: 70.5px;
+    margin-bottom: 60px;
+  }
+
+  /* ------------------------Cards--------------------------------- */
+  .second-column {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .card {
+    width: 249px;
+    height: 177.5px;
+  }
+
+  .Team-builder {
+    height: 178px;
+  }
+
+  .karma {
+    margin-top: 18.5px;
+  }
+
+  .card{
+    padding-top: 0.1%;
+    padding-left: 1%;
+  }
+
+  .card-text {
+    margin-top: -7px;
   }
 
   /* footer section */
